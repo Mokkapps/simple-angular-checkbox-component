@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-component-test": {
+    "simple-angular-component-test": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-component-test",
+            "outputPath": "dist/simple-angular-component",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-component-test:build"
+            "browserTarget": "simple-angular-component-test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-component-test:build:production"
+              "browserTarget": "simple-angular-component-test:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-component-test:build"
+            "browserTarget": "simple-angular-component-test:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "ngx-component-test-e2e": {
+    "simple-angular-component-test-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-component-test:serve"
+            "devServerTarget": "simple-angular-component-test:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-component-test:serve:production"
+              "devServerTarget": "simple-angular-component-test:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "ngx-component-test"
+  "defaultProject": "simple-angular-component-test"
 }

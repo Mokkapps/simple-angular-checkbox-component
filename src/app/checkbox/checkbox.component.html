@@ -1,0 +1,9 @@
+<label [attr.for]="inputId" class="checkbox-layout" #label>
+  <input #input class="checkbox-input" type="checkbox" [id]="inputId" [required]="required" [checked]="checked"
+    [attr.value]="value" [disabled]="disabled" [attr.name]="name" [tabIndex]="tabIndex" [attr.aria-label]="ariaLabel || null" [attr.aria-checked]="getAriaChecked()" (change)="onInteractionEvent($event)"
+    (click)="onInputClick($event)">
+
+  <span class="checkbox-label" #checkboxLabel>
+    <ng-content></ng-content>
+  </span>
+</label>

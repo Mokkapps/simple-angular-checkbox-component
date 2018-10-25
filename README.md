@@ -1,27 +1,14 @@
-# NgxComponentTest
+# Simple Angular Checkbox Component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+[(Ugly/unstyled) live demo](https://simple-angular-checkbox-component.netlify.com/)
 
-## Development server
+This repository demonstrates a simple Angular checkbox component based on the [Angular Material Checkbox](https://github.com/angular/material2/tree/master/src/lib/checkbox).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The motivation was to:
 
-## Code scaffolding
+* provide a simple, usable Angular checkbox component
+* based on good practices established by the Angular Material components (accessibility, tests, etc.)
+* usable without form, in template form and in reactive forms
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Styling was not considered in this example but it can easily be added in the `checkbox.component.scss` file.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
